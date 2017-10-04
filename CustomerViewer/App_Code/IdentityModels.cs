@@ -3,9 +3,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using System.Web;
 using System;
-using CustomerViewer;
+using WebSite1;
 
-namespace CustomerViewer
+namespace WebSite1
 {
     // You can add User data for the user by adding more properties to your User class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -30,7 +30,7 @@ namespace CustomerViewer
     }
 }
 
-namespace CustomerViewer
+namespace WebSite1
 {
     public static class IdentityHelper
     {
