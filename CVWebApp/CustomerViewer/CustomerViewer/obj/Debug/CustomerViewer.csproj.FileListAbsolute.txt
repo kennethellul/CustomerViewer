@@ -168,3 +168,7 @@ C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\C
 C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\CustomerViewer\obj\Debug\CustomerViewer.csproj.CoreCompileInputs.cache
 C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\CustomerViewer\obj\Debug\CustomerViewer.dll
 C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\CustomerViewer\obj\Debug\CustomerViewer.pdb
+C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\CustomerViewer\bin\EntityFramework.dll
+C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\CustomerViewer\bin\EntityFramework.SqlServer.dll
+C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\CustomerViewer\bin\EntityFramework.xml
+C:\Users\kenneth.ellul\Source\Repos\CustomerViewerRepo\CVWebApp\CustomerViewer\CustomerViewer\bin\EntityFramework.SqlServer.xml
