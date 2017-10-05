@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CustomerViewerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerViewer.dbo.CustomerDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CustomerDetails">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="gender" />
+      <PropertyRef Name="telephone_no" />
+      <PropertyRef Name="age" />
+      <PropertyRef Name="address" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="gender" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="telephone_no" Type="bigint" Nullable="false" />
+    <Property Name="age" Type="smallint" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tom">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CustomerViewerModelStoreContainer">
+    <EntitySet Name="Tom" EntityType="Self.Tom" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerDetails" EntityType="Self.CustomerDetails" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CustomerDetails].[id] AS [id], 
+    [CustomerDetails].[name] AS [name], 
+    [CustomerDetails].[gender] AS [gender], 
+    [CustomerDetails].[telephone_no] AS [telephone_no], 
+    [CustomerDetails].[age] AS [age], 
+    [CustomerDetails].[address] AS [address]
+    FROM [dbo].[CustomerDetails] AS [CustomerDetails]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
